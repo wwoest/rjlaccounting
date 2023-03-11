@@ -1,11 +1,13 @@
 <div class="menu">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-6 menu-items-left">
-                <img class="logo-small" alt="RJL Accounting" src="assets/images/logo-small.jpg">
-                <img class="logo-normal" alt="RJL Accounting" src="assets/images/logo-normal.jpg">
+            <div class="col-4 menu-items-left">
+                <a routerLink="home">
+                    <img class="logo-small" alt="RJL Accounting" src="assets/images/logo-small.jpg">
+                    <img class="logo-normal" alt="RJL Accounting" src="assets/images/logo-normal.jpg">
+                </a>
             </div>
-            <div class="col-6 menu-items-container">
+            <div class="col-8 menu-items-container">
                 <div class="menu-items-right">
                     <div id="mobile-menu">
                         <a href="#">
@@ -15,16 +17,20 @@
                         </a>
                     </div>
                     <div id="desktop-menu">
-                        <a routerLink="home" routerLinkActive="active">HOME</a>
-                        <a routerLink="services">SERVICES</a>
-                        <a routerLink="articles">ARTICLES</a>
-                        <a routerLink="dates">DATES</a>
-                        <a routerLink="events">EVENTS</a>
-                        <a routerLink="customers">CUSTOMERS</a>
-                        <a routerLink="contact">CONTACT</a>
+                        <a routerLinkActive="active" routerLink="home">HOME</a>
+                        <a routerLinkActive="active" routerLink="services">SERVICES</a>
+                        <a routerLinkActive="active" routerLink="partners">PARTNERS</a>
+                        <a routerLinkActive="active" routerLink="articles">ARTICLES</a>
+                        <a routerLinkActive="active" routerLink="dates">DATES</a>
+                        <a routerLinkActive="active" routerLink="calc">CALCULATORS</a>
+                        <a routerLinkActive="active" routerLink="events">EVENTS</a>
+                        <a routerLinkActive="active" routerLink="customers">CUSTOMERS</a>
+                        <a routerLinkActive="active" routerLink="qr">e-BUSINESS CARD</a>
+                        <button (click)="openBottomSheet()" mat-raised-button class="contact-btn">Contact Us</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+

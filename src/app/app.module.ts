@@ -13,6 +13,12 @@ import { DatesComponent } from './dates/dates.component';
 import { EventsComponent } from './events/events.component';
 import { CustomersComponent } from './customers/customers.component';
 import { ContactComponent } from './contact/contact.component';
+import { ContactSheetComponent } from './contact-sheet/contact-sheet.component';
+import { SliderComponent } from './slider/slider.component';
+import { PartnersComponent } from './partners/partners.component';
+import { TermsComponent } from './terms/terms.component';
+import { QRCodeModule } from 'angularx-qrcode';
+import { QrComponent } from './qr/qr.component';
 
 @NgModule({
   declarations: [
@@ -25,13 +31,19 @@ import { ContactComponent } from './contact/contact.component';
     EventsComponent,
     CustomersComponent,
     ContactComponent,
-    HomeComponent
+    HomeComponent,
+    ContactSheetComponent,
+    SliderComponent,
+    PartnersComponent,
+    TermsComponent,
+    QrComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MdModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    QRCodeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
