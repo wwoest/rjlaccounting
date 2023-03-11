@@ -13,5 +13,8 @@
     margin-top: 0;
     background: #f1f1f1;
     border-top: solid #e7e7e7 1px;
-   
+
+    @media (max-width: 980px) {
+        display: none;
+    }
 }
