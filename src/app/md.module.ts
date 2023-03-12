@@ -6,6 +6,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatGridListModule } from '@angular/material/grid-list';
 import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
 import { MatNativeDateModule } from '@angular/material/core';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 @NgModule({
   exports: [
@@ -15,7 +16,8 @@ import { MatNativeDateModule } from '@angular/material/core';
     MatMenuModule,
     MatGridListModule,
     MatBottomSheetModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    MatFormFieldModule
   ]
 })
 export class MdModule { }

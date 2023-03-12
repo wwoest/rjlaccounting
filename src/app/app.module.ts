@@ -19,6 +19,7 @@ import { PartnersComponent } from './partners/partners.component';
 import { TermsComponent } from './terms/terms.component';
 import { QRCodeModule } from 'angularx-qrcode';
 import { QrComponent } from './qr/qr.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { QrComponent } from './qr/qr.component';
     AppRoutingModule,
     MdModule,
     BrowserAnimationsModule,
-    QRCodeModule
+    QRCodeModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

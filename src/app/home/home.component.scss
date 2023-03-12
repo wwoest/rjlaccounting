@@ -1,6 +1,35 @@
 #splash {
-    background-size: contain;
+    position: relative;
+    background-size: cover;
     background-repeat: no-repeat;
-    height: 600px;
-    background-image: url("../../assets/images/splash-big.jpg");
+    width: 100%;
+    height: calc(100% - 120px);
+    background-image: url("../../assets/images/splash.png");
+}
+
+#splash-inner {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 160px;
+    background-repeat: repeat;
+    background-image: url("../../assets/images/splash-overlay-bg.png");
+
+    img {
+        @media (min-width: 981px) {
+            max-width: 800px;
+        }
+    }
+}
+
+#contact-form-container {
+    border-radius: 5px;
+    width: 100%;
+    background-repeat: repeat;
+    background-image: url("../../assets/images/splash-overlay-bg.png");
+}
+
+.contact-request-btn {
+    background: #FF5722;
+    color: #ffffff;
 }
