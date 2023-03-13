@@ -1,3 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+a {
+    color: #fff;
+    text-decoration: none
+}
+
+body {
+    height: 100vh;
+    background: #3e3232;
+    font-family: 'Poppins', sans-sherif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    overflow: hidden
+}
+
+.ticker {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 50px;
+    margin: 0 auto
+}
+
+.news {
+    width: 76%;
+    background: #cc4444;
+    padding: 0 2%
+}
+
+.title {
+    width: 20%;
+    text-align: center;
+    background: #c81c1c;
+    position: relative
+}
+
+.title:after {
+    position: absolute;
+    content: "";
+    right: -22%;
+    border-left: 20px solid #c81c1c;
+    border-top: 28px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 21px solid transparent;
+    top: 0px
+}
+
+.title h5 {
+    font-size: 18px;
+    margin: 8% 0
+}
+
+.news marquee {
+    font-size: 18px;
+    margin-top: 12px
+}
+
+.news-content p {
+    margin-right: 41px;
+    display: inline
+}
+
 #splash {
     position: relative;
     background-size: cover;
@@ -8,8 +73,8 @@
 }
 
 #splash-inner {
-    position: relative;
     text-align: center;
+    top: 0;
     width: 100%;
     height: 160px;
     background-repeat: repeat;
@@ -22,14 +87,62 @@
     }
 }
 
+.contact-form-container-outer {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+}
+
 #contact-form-container {
     border-radius: 5px;
     width: 100%;
     background-repeat: repeat;
     background-image: url("../../assets/images/splash-overlay-bg.png");
+
+    > div:first-of-type {
+        text-align: center;
+        margin-top: 80px;
+    }
 }
 
 .contact-request-btn {
     background: #FF5722;
     color: #ffffff;
+}
+
+.mission-statement {
+    text-align: justify;
+    padding: 40px 40px 0 40px;
+}
+
+.mission-statement-header {
+    padding-bottom: 5px;
+    border-bottom: solid 3px #00adb5;
+    text-align: left;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+
+.contact-parent {
+    width: 100%;
+    column-gap: 10px;
+    padding: 40px;
+    display: flex;
+}
+
+.contact-parent > * {
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    flex: 1;
+}
+
+.contact-parent > input:focus {
+    outline: none;
+}
+
+.contact-parent > button {
+    white-space: nowrap;
 }

@@ -2,3 +2,7 @@
     color: #333333;
     background: #ffffff;
 }
+
+.mdc-text-field--filled:not(.mdc-text-field--disabled) {
+    background: none !important;
+}

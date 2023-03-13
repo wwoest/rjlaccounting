@@ -1,0 +1,9 @@
+.services-container {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.services-container > div {
+    display: flex;
+    flex-flow: column wrap;
+}

@@ -7,6 +7,7 @@ import { ContactComponent } from './contact/contact.component';
 import { CustomersComponent } from './customers/customers.component';
 import { DatesComponent } from './dates/dates.component';
 import { EventsComponent } from './events/events.component';
+import { FaqComponent } from './faq/faq.component';
 import { HomeComponent } from './home/home.component';
 import { PartnersComponent } from './partners/partners.component';
 import { QrComponent } from './qr/qr.component';
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'partners', component: PartnersComponent },
   { path: 'services', component: ServicesComponent },
+  { path: 'faq', component: FaqComponent },
   { path: 'articles', component: ArticlesComponent },
   { path: 'dates', component: DatesComponent },
   { path: 'calc', component: CalcComponent },

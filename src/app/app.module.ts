@@ -20,6 +20,9 @@ import { TermsComponent } from './terms/terms.component';
 import { QRCodeModule } from 'angularx-qrcode';
 import { QrComponent } from './qr/qr.component';
 import { FormsModule } from '@angular/forms';
+import { FaqComponent } from './faq/faq.component';
+import { ScriptService } from './shared/services/script.service';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -37,9 +40,12 @@ import { FormsModule } from '@angular/forms';
     SliderComponent,
     PartnersComponent,
     TermsComponent,
-    QrComponent
+    QrComponent,
+    FaqComponent
   ],
   imports: [
+    CommonModule,
+    BrowserModule,
     BrowserModule,
     AppRoutingModule,
     MdModule,
@@ -47,7 +53,7 @@ import { FormsModule } from '@angular/forms';
     QRCodeModule,
     FormsModule
   ],
-  providers: [],
+  providers: [ScriptService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
