@@ -1,0 +1,56 @@
+.contact-form-container-outer {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+}
+
+#contact-form-container {
+    background: #e7e7dd;
+    color: #333333;
+    width: 100%;
+
+    >div:first-of-type {
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+.mission-statement {
+    text-align: justify;
+    padding: 40px 40px 0 40px;
+}
+
+.mission-statement-header {
+    padding-bottom: 5px;
+    border-bottom: solid 3px #71be0d;
+    text-align: left;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-parent {
+    width: 100%;
+    column-gap: 10px;
+    padding: 40px;
+    display: flex;
+}
+
+.contact-parent>* {
+    padding: 10px;
+    border: none;
+    border-radius: 0px;
+    flex: 1;
+}
+
+.contact-parent>input:focus {
+    outline: none;
+}
+
+.contact-parent>button {
+    white-space: nowrap;
+}
+
+.btn-success {
+    height: 57px;
+}

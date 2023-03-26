@@ -1,0 +1,58 @@
+// Bootstrap overrides
+.btn {
+  border-radius: 0px;
+}
+
+.btn-dark {
+  background: #242424;
+}
+
+.btn-success,
+.btn-success:hover {
+  background: #71be0d;
+  color: #ffffff;
+  border: solid 1px #71be0d;
+}
+
+.btn-primary,
+.btn-primary:hover {
+  border: none;
+  background: #bee610;
+  color: #333333;
+  border: solid 1px #71be0d;
+}
+
+.btn-info,
+.btn-info:hover {
+  border: none;
+  background: #242424;
+  color: #f2f2f2;
+  border: solid 1px #242424;
+}
+
+.bg-dark {
+  background: #242424 !important;
+}
+
+.form-control {
+  border-radius: 0px;
+}
+
+.stretch {
+  width: 100%;
+}
+
+.alert.alert-info {
+  color: #333333;
+  background: #e7e7dd;
+  border-radius: 0px;
+  border: none;
+}
+
+.card {
+  border-radius: 0px;
+}
+
+.card-title {
+  font-weight: bold;
+}
