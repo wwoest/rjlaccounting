@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  ngOnInit() {
+    document.body.classList.add("home-bg");
+  }
+
+  ngOnDestroy() {
+    document.body.classList.remove("home-bg");
+  }
+
 }

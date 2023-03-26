@@ -5,9 +5,13 @@
 }
 
 #contact-form-container {
-    background: #e7e7dd;
+    background: #e7e7ddde;
     color: #333333;
     width: 100%;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
 
     >div:first-of-type {
         text-align: center;

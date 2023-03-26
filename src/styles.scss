@@ -1,5 +1,14 @@
 html, body { height: 140%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { 
+  margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; 
+}
+
+.home-bg {
+  background-image: url('/../assets/images/splash.png') !important;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
 
 .main-logo {
   max-height: 50px;
