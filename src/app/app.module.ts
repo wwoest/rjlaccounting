@@ -16,6 +16,8 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { NgxWhastappButtonModule } from "ngx-whatsapp-button";
+import { QRCodeModule } from 'angularx-qrcode';
+import { EcardComponent } from './ecard/ecard.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,8 @@ import { NgxWhastappButtonModule } from "ngx-whatsapp-button";
     TermsComponent,
     ContactFormComponent,
     ContactComponent,
-    AboutComponent
+    AboutComponent,
+    EcardComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +39,8 @@ import { NgxWhastappButtonModule } from "ngx-whatsapp-button";
     BrowserAnimationsModule,
     LayoutModule,
     NgbModule,
-    NgxWhastappButtonModule  
+    NgxWhastappButtonModule,
+    QRCodeModule  
   ],
   providers: [],
   bootstrap: [AppComponent]

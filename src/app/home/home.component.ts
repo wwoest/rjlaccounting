@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  public myAngularxQrCode = "http://www.rjlaccounting.co.za/e-card.pdf";
+  
   ngOnInit() {
     document.body.classList.add("home-bg");
   }
