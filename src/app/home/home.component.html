@@ -1,2 +1,14 @@
 <div class="banner-text-container fs-2">..your one-stop <strong>TAX</strong> &<br><strong>ACCOUNTING</strong> solution.</div>
-<app-contact-form></app-contact-form>
+<ngb-carousel #carousel [interval]="5000" [pauseOnHover]="pauseOnHover" [pauseOnFocus]="pauseOnFocus"
+    (slide)="onSlide($event)">
+    <ng-template ngbSlide *ngFor="let img of images; index as i">
+        <div class="carousel-caption">
+            &nbsp;
+        </div>
+        <a href="https://www.google.fr/?q=Number+{{i+1}}" target="_blank" rel="nofollow noopener noreferrer">
+            <div class="picsum-img-wrapper">
+                <img [src]="img" class="img-fluid" alt="Carousel" />
+            </div>
+        </a>
+    </ng-template>
+</ngb-carousel>

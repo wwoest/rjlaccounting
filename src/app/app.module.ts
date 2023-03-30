@@ -9,7 +9,7 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { ServicesComponent } from './services/services.component';
 import { ResourcesComponent } from './resources/resources.component';
 import { FaqComponent } from './faq/faq.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbCarouselConfig, NgbCarouselModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FooterComponent } from './footer/footer.component';
 import { TermsComponent } from './terms/terms.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
@@ -18,6 +18,8 @@ import { AboutComponent } from './about/about.component';
 import { NgxWhastappButtonModule } from "ngx-whatsapp-button";
 import { QRCodeModule } from 'angularx-qrcode';
 import { EcardComponent } from './ecard/ecard.component';
+import { MissionComponent } from './mission/mission.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,8 @@ import { EcardComponent } from './ecard/ecard.component';
     ContactFormComponent,
     ContactComponent,
     AboutComponent,
-    EcardComponent
+    EcardComponent,
+    MissionComponent
   ],
   imports: [
     BrowserModule,
@@ -40,9 +43,11 @@ import { EcardComponent } from './ecard/ecard.component';
     LayoutModule,
     NgbModule,
     NgxWhastappButtonModule,
-    QRCodeModule  
+    QRCodeModule,
+    FormsModule,
+    NgbCarouselModule  
   ],
-  providers: [],
+  providers: [NgbCarouselConfig],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

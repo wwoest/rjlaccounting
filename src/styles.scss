@@ -1,17 +1,20 @@
-html, body { height: 140%; }
+@import "variables.scss";
+
+html, body { 
+  min-height: calc(100% + 200px);
+}
 body { 
-  margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; 
+  margin: 0; font-family: $font-family; 
 }
 
 .home-bg {
-  background-image: url('/../assets/images/splash.png') !important;
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
 
 .main-logo {
-  max-height: 50px;
+  max-height: 30px;
 }
 
 .section-header {
@@ -20,7 +23,7 @@ body {
   font-size: 20px;
   font-weight: bold;
   width: 100%;
-  border-bottom: solid 3px #71be0d;
+  border-bottom: solid 3px $color-section-header-border;
 }
 
 ::-webkit-scrollbar {
@@ -33,10 +36,47 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #71be0d;
+  background: $color-general-1;
   border-radius: 0;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #333333;
+  background: $color-main-background-light;
+}
+
+.feature-card {
+  border: none;
+  background: $color-feature-card-background;
+  color: $color-feature-card-text;
+}
+
+.feature-card .card-text {
+  border-radius: $radius-feature-card;
+  min-height: 100px;
+}
+
+a:focus, a:active {
+  color: $color-a-normal;
+  border: none;
+}
+
+a, button {
+  border: none !important;
+  border-radius: $radius-button !important;
+}
+
+.alert.alert-info {
+  background: $alert-info-background;
+  color: $alert-info-text;
+  border: $alert-info-border;
+  border-radius: $radius-alert-info;
+}
+
+.ngx-whatsapp-button-float {
+  border-radius: 50px !important;
+  box-shadow: none !important;
+}
+
+.input-btn {
+  height: 58px;
 }

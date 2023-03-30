@@ -1,8 +1,21 @@
+@import "../../variables.scss";
+
 .banner-text-container {
+    background: $color-banner-background;
+    color: $color-banner-text;
     text-align: center;
     width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
-    background: rgba(186, 194, 179, 0.7);
-    border-bottom: solid 2px #333333;
+    border-bottom: solid 2px $color-banner-border;
+}
+
+.picsum-img-wrapper {
+    text-align: center;
+}
+
+.picsum-img-wrapper > img {
+    max-width: 1200px;
+    max-height: 600px;
+    overflow: hidden;
 }

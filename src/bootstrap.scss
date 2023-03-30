@@ -1,40 +1,50 @@
-// Bootstrap overrides
-.btn {
-  border-top-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
+@import "variables.scss";
+
+#navbarSupportedContent>button {
+  background: $color-nav-background;
+  color: $color-nav-text;
+  &:hover {
+    background: $color-nav-background-hover;
+    color: $color-nav-text-hover;
+  }
 }
 
-.btn-dark {
-  background: #242424;
+.btn-contact-us {
+  background: $color-action-money !important;
+  color: $color-action-money-text !important;
+  border: none !important;;
+  &:hover {
+    background: $color-action-money-hover !important;;
+  }
 }
 
 .btn-success,
 .btn-success:hover {
-  background: #71be0d;
-  color: #ffffff;
-  border: solid 1px #71be0d;
+  background: $color-action-success;
+  color: $color-action-success-text;
+  border: solid 1px $color-action-success-border;
 }
 
 .btn-primary,
 .btn-primary:hover {
-  border: none;
-  background: #bee610;
-  color: #333333;
-  border: solid 1px #71be0d;
+  background: $color-action-primary;
+  color: $color-action-primary-text;
+  border: solid 1px $color-action-primary-border;
 }
 
 .btn-info,
 .btn-info:hover {
-  border: none;
-  background: #242424;
-  color: #f2f2f2;
-  border: solid 1px #242424;
+  background: $color-action-info;
+  color: $color-action-info-text;
+  border: solid 1px $color-action-info-border;
 }
 
 .bg-dark {
-  background: #242424 !important;
+  background: $color-main-background-dark !important;
+}
+
+.bg-light {
+  background: $color-main-background-light !important;
 }
 
 .form-control {
@@ -45,27 +55,6 @@
   width: 100%;
 }
 
-.alert.alert-info {
-  color: #333333;
-  background: #e7e7dd;
-  border-radius: 0px;
-  border: none;
-}
-
-.card {
-  border-top-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-}
-
 .card-title {
   font-weight: bold;
-}
-
-input.form-control {
-  border-top-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
 }
