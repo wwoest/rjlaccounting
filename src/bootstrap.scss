@@ -9,6 +9,11 @@
   }
 }
 
+.btn:disabled {
+  background: $color-disabled-background !important;
+  color: $color-disabled-text !important;
+}
+
 .btn-contact-us {
   background: $color-action-money !important;
   color: $color-action-money-text !important;
@@ -20,9 +25,9 @@
 
 .btn-success,
 .btn-success:hover {
-  background: $color-action-success;
-  color: $color-action-success-text;
-  border: solid 1px $color-action-success-border;
+  background: $color-action-success !important;
+  color: $color-action-success-text !important;
+  border: solid 1px $color-action-success-border !important;
 }
 
 .btn-primary,

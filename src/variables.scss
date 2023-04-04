@@ -2,6 +2,9 @@ $color-banner-background: #f2f2f2;
 $color-banner-text: #333333;
 $color-banner-border: #dddddd;
 
+$color-disabled-background: #777777;
+$color-disabled-text: #f3f3f3;
+
 $color-a-normal: #333333;
 
 $color-section-header-border: #333333;
@@ -27,7 +30,7 @@ $color-secondary-text: #ffffff;
 $color-action: #113355;
 $color-action-text: #ffffff;
 
-$color-main-background-light: #ffffff;
+$color-main-background-light: #ededed;
 $color-main-text-light: #333333;
 
 $color-main-background-dark: #333333;
@@ -36,10 +39,13 @@ $color-main-text-dark: #ffffff;
 $color-feature-card-background: #f2f2f2;
 $color-feature-card-text: #333333;
 
-$color-nav-background: #ffffff;
-$color-nav-background-hover: #f2f2f2;
+$color-nav-background: #ededed;
+$color-nav-background-hover: #015288;
 $color-nav-text: #333333;
-$color-nav-text-hover: #333333;
+$color-nav-text-hover: #ffffff;
+
+$color-quote-background: #f44336;
+$color-quote-text: #ffffff;
 
 $font-family: Roboto, "Helvetica Neue", sans-serif;
 
@@ -48,9 +54,9 @@ $color-action-money-hover: #015288;
 $color-action-money-text: #ffffff;
 $color-action-money-border: #ffffff;
 
-$color-action-success: #f26255;
+$color-action-success: #f44336;
 $color-action-success-text: #ffffff;
-$color-action-success-border: #f26255;
+$color-action-success-border: #f44336;
 
 $color-action-primary: #015288;
 $color-action-primary-text: #ffffff;

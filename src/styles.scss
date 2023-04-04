@@ -1,8 +1,9 @@
 @import "variables.scss";
 
 html, body { 
-  min-height: calc(100% + 200px);
-  font-size: 14px;
+  overflow-x: hidden;
+  min-height: 2000px;
+  font-size: 1em;
   font-family: $font-family !important;
 }
 body { 
@@ -18,11 +19,13 @@ body {
 }
 
 .main-logo {
+  margin-bottom: 5px;
   max-height: 30px;
 }
 
 .section-header {
   margin-top: 20px; 
+  margin-bottom: 20px;
   padding-bottom: 10px;
   font-size: 20px;
   font-weight: bold;
@@ -86,13 +89,24 @@ a, button {
 }
 
 .flash-card {
+  transition: 0.3s;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none !important;
   background-color: $color-flash-card-background;
   text-align: center;
   height: 100%;
     &:hover {
       background: $color-primary;
       color: $color-primary-text;
+      & a {
+        color: $color-general-2;
+      }
     }
+}
+
+.flash-card a {
+  color: $color-general-1;
 }
 
 .flash-card-header {
@@ -104,4 +118,10 @@ a, button {
   min-height: 120px;
   text-align: left;
   height: 100%;
+}
+
+@media (max-width: 767px) {
+  .hidden-mobile {
+    display: none;
+  }
 }
