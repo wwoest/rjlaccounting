@@ -98,6 +98,17 @@ a, button {
   height: 100%;
 }
 
+.flash-card-teaser {
+  min-height: 140px;
+}
+
+.flash-card-splash {
+  text-align: center;
+  & img {
+    max-width: 250px;
+  }
+}
+
 .flash-card-footer {
   text-align: end;
   position: absolute;
@@ -106,6 +117,13 @@ a, button {
   & button {
     padding-left: 20px !important;
     padding-right: 18px !important;
+    border-bottom-right-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+    border-bottom-left-radius: 5px !important;
+    border-top-left-radius: 0px !important;
+  }
+  & a {
+    color: $color-a-contrast !important;
     border-bottom-right-radius: 0px !important;
     border-top-right-radius: 0px !important;
     border-bottom-left-radius: 5px !important;

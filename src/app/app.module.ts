@@ -20,6 +20,10 @@ import { QRCodeModule } from 'angularx-qrcode';
 import { EcardComponent } from './ecard/ecard.component';
 import { MissionComponent } from './mission/mission.component';
 import { FormsModule } from '@angular/forms';
+import { ServicesTaxComponent } from './services/services-tax/services-tax.component';
+import { ServicesAccountingComponent } from './services/services-accounting/services-accounting.component';
+import { ServicesPayrollComponent } from './services/services-payroll/services-payroll.component';
+import { ServicesOtherComponent } from './services/services-other/services-other.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +38,11 @@ import { FormsModule } from '@angular/forms';
     ContactComponent,
     AboutComponent,
     EcardComponent,
-    MissionComponent
+    MissionComponent,
+    ServicesTaxComponent,
+    ServicesAccountingComponent,
+    ServicesPayrollComponent,
+    ServicesOtherComponent
   ],
   imports: [
     BrowserModule,
