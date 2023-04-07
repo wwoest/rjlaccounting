@@ -89,20 +89,28 @@ a, button {
 }
 
 .flash-card {
+  position: relative;
   transition: 0.3s;
-  cursor: pointer;
   border-radius: 5px;
   border: none !important;
   background-color: $color-flash-card-background;
   text-align: center;
   height: 100%;
-    &:hover {
-      background: $color-primary;
-      color: $color-primary-text;
-      & a {
-        color: $color-general-2;
-      }
-    }
+}
+
+.flash-card-footer {
+  text-align: end;
+  position: absolute;
+  right: 0;
+  top: 0;
+  & button {
+    padding-left: 20px !important;
+    padding-right: 18px !important;
+    border-bottom-right-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+    border-bottom-left-radius: 5px !important;
+    border-top-left-radius: 0px !important;
+  }
 }
 
 .flash-card a {

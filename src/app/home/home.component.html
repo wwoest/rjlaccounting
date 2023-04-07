@@ -11,24 +11,32 @@
             <app-mission></app-mission>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
-            <div class="p-3 border flash-card" (click)="goto('services')">
+            <div class="p-3 border flash-card">
                 <div class="fs-2"><i class="bi bi-calculator"></i></div>
                 <div class="flash-card-content f2-1"><div class="flash-card-header">Tax & Accounting Services</div>
                     Tax deadlines? Accounting woes? We've got your back! Click here to see an extensive list of services offered by us.</div>
+                    <div class="flash-card-footer">
+                        <button (click)="goto('services')" class="btn btn-info">More</button>
+                    </div>
             </div>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
-            <div class="p-3 border flash-card" (click)="goto('resources')">
+            <div class="p-3 border flash-card">
                 <div class="fs-2"><i class="bi bi-calendar-day"></i></div>
                 <div class="flash-card-content f2-1"><div class="flash-card-header">Important Dates & Resources</div>
-                    View a handy collection of important dates and resources.
-                </div>
+                    View a handy collection of important dates and resources.</div>
+                    <div class="flash-card-footer">
+                        <button (click)="goto('resources')" class="btn btn-info">More</button>
+                    </div>
             </div>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
-            <div class="p-3 border flash-card" (click)="goto('contact')">
+            <div class="p-3 border flash-card">
                 <div class="fs-2"><i class="bi bi-telephone-fill"></i></div>
                 <div class="flash-card-content f2-1"><div class="flash-card-header">Talk to Us</div>Sometimes is just better to pick up a phone and talk. Contact us to discuss all your tax and accounting needs.</div>
+                <div class="flash-card-footer">
+                    <button (click)="goto('contact')" class="btn btn-info">More</button>
+                </div>
             </div>
         </div>
     </div>
