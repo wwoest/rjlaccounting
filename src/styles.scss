@@ -95,7 +95,9 @@ a, button {
   border: none !important;
   background-color: $color-flash-card-background;
   text-align: center;
-  height: 100%;
+  @media screen and (min-width:600px) {
+    height: 100%;
+  }
 }
 
 .flash-card-teaser {
