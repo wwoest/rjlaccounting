@@ -1,7 +1,17 @@
-<div class="contain-fluid mt-5">
+<div class="container mt-5">
     <div class="row">
-        <div class="col-12 text-center">
-            <img alt="RJL Accounting" class="img-fluid" src="/assets/images/splash.png">
+        <div class="col-12">
+            <ngb-carousel *ngIf="carouselImages">
+                <ng-template ngbSlide>
+                    <img (click)="goto('services')" class="img-fluid carousel-click" [src]="carouselImages[0]" alt="RJL Accounting" />
+                </ng-template>
+                <ng-template ngbSlide>
+                    <img (click)="goto('services')" class="img-fluid carousel-click" [src]="carouselImages[1]" alt="RJL Accounting" />
+                </ng-template>
+                <ng-template ngbSlide>
+                    <img (click)="goto('services')" class="img-fluid carousel-click" [src]="carouselImages[2]" alt="RJL Accounting" />
+                </ng-template>
+            </ngb-carousel>
         </div>
     </div>
 </div>
@@ -13,27 +23,35 @@
         <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
             <div class="p-3 border flash-card">
                 <div class="fs-2"><i class="bi bi-calculator"></i></div>
-                <div class="flash-card-content f2-1"><div class="flash-card-header">Tax & Accounting Services</div>
-                    Tax deadlines? Accounting woes? We've got your back! Click here to see an extensive list of services offered by us.</div>
-                    <div class="flash-card-footer">
-                        <button (click)="goto('services')" class="btn btn-info">More</button>
-                    </div>
+                <div class="flash-card-content f2-1">
+                    <div class="flash-card-header">Tax & Accounting Services</div>
+                    Tax deadlines? Accounting woes? We've got your back! Click here to see an extensive list of services
+                    offered by us.
+                </div>
+                <div class="flash-card-footer">
+                    <button (click)="goto('services')" class="btn btn-info">More</button>
+                </div>
             </div>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
             <div class="p-3 border flash-card">
                 <div class="fs-2"><i class="bi bi-calendar-day"></i></div>
-                <div class="flash-card-content f2-1"><div class="flash-card-header">Important Dates & Resources</div>
-                    View a handy collection of important dates and resources.</div>
-                    <div class="flash-card-footer">
-                        <button (click)="goto('resources')" class="btn btn-info">More</button>
-                    </div>
+                <div class="flash-card-content f2-1">
+                    <div class="flash-card-header">Important Dates & Resources</div>
+                    View a handy collection of important dates and resources.
+                </div>
+                <div class="flash-card-footer">
+                    <button (click)="goto('resources')" class="btn btn-info">More</button>
+                </div>
             </div>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
             <div class="p-3 border flash-card">
                 <div class="fs-2"><i class="bi bi-telephone-fill"></i></div>
-                <div class="flash-card-content f2-1"><div class="flash-card-header">Talk to Us</div>Sometimes is just better to pick up a phone and talk. Contact us to discuss all your tax and accounting needs.</div>
+                <div class="flash-card-content f2-1">
+                    <div class="flash-card-header">Talk to Us</div>Sometimes is just better to pick up a phone and talk.
+                    Contact us to discuss all your tax and accounting needs.
+                </div>
                 <div class="flash-card-footer">
                     <button (click)="goto('contact')" class="btn btn-info">More</button>
                 </div>
@@ -42,8 +60,13 @@
     </div>
 </div>
 <div style="margin-top: 20px; width: 100%; text-align: center;">
-    <a  target="_blank"
-        rel="noopener noreferrer"
+    
+    
+    <a target="_blank" rel="noopener noreferrer"
         href="https://www.freepik.com/free-vector/taxes-payment-online-service-platform-set-idea-business-accounting-audit-company-pays-financial-bill-online-tax-office-flat-vector-illustration_26195889.htm#query=tax%20service&position=12&from_view=search&track=ais">Image
         by vector4stock</a> on Freepik
+
+
+
+        
 </div>

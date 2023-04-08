@@ -106,8 +106,17 @@ a, button {
 
 .flash-card-splash {
   text-align: center;
+  font-size: 10px;
+  color: #333333;
   & img {
     max-width: 250px;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  & a {
+    font-size: 10px;
+    color: #333333;
   }
 }
 
