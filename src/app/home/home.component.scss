@@ -1,5 +1,6 @@
 @import "../../variables.scss";
 
+
 .banner-text-container {
     background: $color-banner-background;
     color: $color-banner-text;
@@ -34,4 +35,16 @@
 
 .carousel-click {
     cursor: pointer;
+}
+
+@media screen and (max-width:768px) {
+    .rjl-home-carousel {
+        display: none;
+    }
+}
+
+@media screen and (min-width:769px) {
+    .rjl-home-splash {
+        display: none;
+    }
 }

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { ServicesAccountingComponent } from './services-accounting/services-accounting.component';
+import { ServicesFinancialReportingComponent } from './services-financial-reporting/services-financial-reporting.component';
 import { ServicesOtherComponent } from './services-other/services-other.component';
 import { ServicesPayrollComponent } from './services-payroll/services-payroll.component';
 import { ServicesTaxComponent } from './services-tax/services-tax.component';
@@ -20,7 +20,7 @@ export class ServicesComponent {
     if ("tax" === service) {
       modalComponent = ServicesTaxComponent;
     } else if ("accounting" === service) {
-      modalComponent = ServicesAccountingComponent;
+      modalComponent = ServicesFinancialReportingComponent;
     } else if ("payroll" === service) {
       modalComponent = ServicesPayrollComponent;
     } else if ("other" === service) {

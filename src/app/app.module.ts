@@ -20,9 +20,9 @@ import { EcardComponent } from './ecard/ecard.component';
 import { MissionComponent } from './mission/mission.component';
 import { FormsModule } from '@angular/forms';
 import { ServicesTaxComponent } from './services/services-tax/services-tax.component';
-import { ServicesAccountingComponent } from './services/services-accounting/services-accounting.component';
 import { ServicesPayrollComponent } from './services/services-payroll/services-payroll.component';
 import { ServicesOtherComponent } from './services/services-other/services-other.component';
+import { ServicesFinancialReportingComponent } from './services/services-financial-reporting/services-financial-reporting.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +39,7 @@ import { ServicesOtherComponent } from './services/services-other/services-other
     EcardComponent,
     MissionComponent,
     ServicesTaxComponent,
-    ServicesAccountingComponent,
+    ServicesFinancialReportingComponent,
     ServicesPayrollComponent,
     ServicesOtherComponent
   ],
