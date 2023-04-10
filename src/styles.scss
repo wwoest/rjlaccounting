@@ -175,3 +175,10 @@ a, button {
 .page-teaser {
   padding-bottom: 20px;
 }
+
+.word-pop {
+  padding: 0 3px 0 3px;
+  border-radius: 3px;
+  background: $color-action-success;
+  color: $color-action-success-text;
+}
