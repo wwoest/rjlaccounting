@@ -1,6 +1,8 @@
 @import "variables.scss";
 
 #navbarSupportedContent>button {
+  margin-right: 5px; 
+  font-size: 1em;
   background: $color-nav-background;
   color: $color-nav-text;
   &:hover {
@@ -28,9 +30,9 @@
 
 .btn-success,
 .btn-success:hover {
-  background: $color-action-success !important;
-  color: $color-action-success-text !important;
-  border: solid 1px $color-action-success-border !important;
+  background: #ffffff !important;
+  color: #000000 !important;
+  border: none !important;
 }
 
 .btn-primary,
@@ -48,11 +50,18 @@
 }
 
 .bg-dark {
-  background: $color-main-background-dark !important;
+  background: rgba(1, 82, 136, 1);
+  background: -moz-linear-gradient(left, rgba(1, 82, 136, 1) 0%, rgba(0, 159, 251, 1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(1, 82, 136, 1)), color-stop(100%, rgba(0, 159, 251, 1)));
+  background: -webkit-linear-gradient(left, rgba(1, 82, 136, 1) 0%, rgba(0, 159, 251, 1) 100%);
+  background: -o-linear-gradient(left, rgba(1, 82, 136, 1) 0%, rgba(0, 159, 251, 1) 100%);
+  background: -ms-linear-gradient(left, rgba(1, 82, 136, 1) 0%, rgba(0, 159, 251, 1) 100%);
+  background: linear-gradient(to right, rgba(1, 82, 136, 1) 0%, rgba(0, 159, 251, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#015288', endColorstr='#009ffb', GradientType=1);
 }
 
 .bg-light {
-  background: $color-main-background-light !important;
+  background: $color-main-background-dark !important;
 }
 
 .form-control {
@@ -69,4 +78,13 @@
 
 .carousel-inner {
   border-radius: 5px;
+}
+
+
+.navbar-toggler {
+  color: $color-action-success;
+}
+
+.navbar-toggler-icon {
+  filter: brightness(1) invert(1);
 }

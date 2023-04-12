@@ -18,9 +18,9 @@ $color-general-2: #f2f2f2;
 $color-primary-a: #015288;
 $color-secondary-a: #333377;
 
-$color-footer-a: #ffffff;
-$color-footer-background: #015288;
-$color-footer-text: #ffffff;
+$color-footer-a: #000000;
+$color-footer-background: #009ffb;
+$color-footer-text: #000000;
 
 $color-primary: #015288;
 $color-primary-text: #ffffff;
@@ -34,36 +34,39 @@ $color-action-text: #ffffff;
 $color-main-background-light: #ededed;
 $color-main-text-light: #333333;
 
+$color-main-background-primary: #015288;
+$color-main-text-primary: #ffffff;
+
 $color-main-background-dark: #333333;
 $color-main-text-dark: #ffffff;
 
 $color-feature-card-background: #f2f2f2;
 $color-feature-card-text: #333333;
 
-$color-nav-background: #ededed;
-$color-nav-background-hover: #015288;
-$color-nav-text: #333333;
-$color-nav-text-hover: #ffffff;
+$color-nav-background: #015288;
+$color-nav-background-hover: #ffffff;
+$color-nav-text: #ffffff;
+$color-nav-text-hover: #000000;
 
-$color-quote-background: #339900;
+$color-quote-background: #009ffb;
 $color-quote-text: #ffffff;
 
-$font-family: Roboto, "Helvetica Neue", sans-serif;
+$font-family: Montserrat, "Montserrat", "Helvetica Neue", sans-serif;
 
 $color-action-money: #015288;
 $color-action-money-hover: #015288;
 $color-action-money-text: #ffffff;
 $color-action-money-border: #ffffff;
 
-$color-action-success: #339900;
+$color-action-success: #009ffb;
 $color-action-success-text: #ffffff;
-$color-action-success-border: #339900;
+$color-action-success-border: #009ffb;
 
 $color-action-primary: #015288;
 $color-action-primary-text: #ffffff;
 $color-action-primary-border: #ffffff;
 
-$color-action-error: #339900;
+$color-action-error: #009ffb;
 $color-action-error-text: #ffffff;
 $color-action-error-border: #ffffff;
 

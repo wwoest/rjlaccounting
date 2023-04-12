@@ -1,11 +1,11 @@
-<nav class="navbar navbar-expand-sm navbar-light bg-light">
+<nav class="navbar navbar-expand-sm navbar-light bg-dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="#" [routerLink]="'home'">
             <img alt="RJL Accounting (Pty) Ltd" class="img-fluid main-logo" src="assets/images/logo.png">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <img src="assets/images/nav/hamburger.png" style="height: 20px; width: 20px;">
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
@@ -13,7 +13,7 @@
             <button routerLinkActive="active" type="button" class="btn" [routerLink]="'resources'">Resources</button>
             <!-- <button routerLinkActive="active" type="button" class="btn hidden-mobile" [routerLink]="'e-card'">e-Business Card</button> -->
             <button routerLinkActive="active" type="button" class="btn" [routerLink]="'about'">About</button>
-            <button class="btn btn-success ms-3" [routerLink]="'contact'">Contact</button>
+            <button class="btn btn-success" style="margin-left: 10px;" [routerLink]="'contact'">Contact</button>
         </div>
     </div>
 </nav>

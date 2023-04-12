@@ -1,9 +1,10 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500,700");
 @import "variables.scss";
 
 html, body { 
   overflow-x: hidden;
   min-height: 3000px;
-  font-size: 1em;
+  font-size: 0.75em;
   font-family: $font-family !important;
 }
 
