@@ -188,3 +188,12 @@ a, button {
 .word-pop {
   font-weight: bold;
 }
+
+.bloat {
+  padding: 10px 30px 10px 30px;
+  transition: 0.3s;
+}
+
+.bloat:hover {
+  margin-top: -5px;
+}
