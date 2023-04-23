@@ -38,7 +38,7 @@ export class ContactFormComponent implements OnInit {
     window.setTimeout(() => {
       const btn = document.getElementById("rjlRequestContactBtn") as HTMLButtonElement;
       btn.disabled = false;
-    }, 2000);
+    }, 10000);
   }
 
   onSubmit(formData: FormGroup) {
