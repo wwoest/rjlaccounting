@@ -1,34 +1,51 @@
-<div class="contact-form-container-outer">
-    <div id="contact-form-container">
-        <div>
-            <div class="form-group">
-                <div class="container-fluid px-5 py-5">
-                    <div class="row">
-                        <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3 col-xxl-3">
-                            <div class="form-floating mb-3">
-                                <input required type="text" class="form-control" placeholder="Name" id="contact_name">
-                                <label for="contact_name">Name</label>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3 col-xxl-3">
-                            <div class="form-floating mb-3">
-                                <input required type="tel" class="form-control" placeholder="Phone" id="contact_phone">
-                                <label for="contact_phone">Phone</label>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3 col-xxl-3">
-                            <div class="form-floating mb-3">
-                                <input required type="email" class="form-control" placeholder="E-mail"
-                                    id="contact_e-mail">
-                                <label for="contact_e-mail">E-mail</label>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3 col-xxl-3">
-                            <button type="button" class="btn btn-success stretch input-btn">Contact Me</button>
-                        </div>
+<div class="contact-us-mail-container">
+    <div *ngIf="callbackRequested">
+        <div class="container">
+            <h2 class="text-center mb-5">Thank you!<br>We will get back to you shortly.</h2>
+        </div>
+        <div class="col-12 text-center">
+            <button type="submit" class="btn btn-primary contact-us-btn" (click)="enableResend()">Send Another</button>
+        </div>
+    </div>
+    <form [formGroup]="formData" (ngSubmit)="onSubmit(formData.value)" *ngIf="!callbackRequested">
+        <div class="container">
+            <h2 class="text-center mb-5">Contact Us</h2>
+            <div class="row" *ngIf="!sent">
+                <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4">
+                    <div class="form-group">
+                        <input maxlength="50" type="text" class="form-control input"
+                            [class]="submitted && !formData.controls['fullNameControl'].valid ? 'input-err' : ''"
+                            name="name-field" placeholder="Your name" formControlName="fullNameControl">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4">
+                    <div class="form-group">
+                        <input maxlength="80" type="email" class="form-control input"
+                            [class]="submitted && !formData.controls['emailControl'].valid ? 'input-err' : ''"
+                            name="email-field" placeholder="Your e-mail address" formControlName="emailControl">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4">
+                    <div class="form-group">
+                        <input maxlength="10" type="text" class="form-control input"
+                            [class]="submitted && !formData.controls['telControl'].valid ? 'input-err' : ''"
+                            name="tel-field" placeholder="Your contact number" formControlName="telControl">
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-group">
+                        <textarea (click)="checkPlaceholder()" maxlength="250" class="form-control text"
+                            formControlName="commentControl" name="comment-field"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center mt-5">
+                <div class="col-12">
+                    <button id="rjlRequestContactBtn" type="submit" class="btn btn-primary contact-us-btn">Send</button>
+                </div>
+            </div>
         </div>
-    </div>
+    </form>
 </div>

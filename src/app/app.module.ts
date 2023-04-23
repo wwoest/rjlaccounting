@@ -18,11 +18,14 @@ import { NgxWhastappButtonModule } from "ngx-whatsapp-button";
 import { QRCodeModule } from 'angularx-qrcode';
 import { EcardComponent } from './ecard/ecard.component';
 import { MissionComponent } from './mission/mission.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ServicesTaxComponent } from './services/services-tax/services-tax.component';
 import { ServicesPayrollComponent } from './services/services-payroll/services-payroll.component';
 import { ServicesOtherComponent } from './services/services-other/services-other.component';
 import { ServicesFinancialReportingComponent } from './services/services-financial-reporting/services-financial-reporting.component';
+import { ContactService } from './shared/contact.service';
+import { HttpClientModule } from '@angular/common/http';
+import { CookieComponent } from './cookie/cookie.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +44,8 @@ import { ServicesFinancialReportingComponent } from './services/services-financi
     ServicesTaxComponent,
     ServicesFinancialReportingComponent,
     ServicesPayrollComponent,
-    ServicesOtherComponent
+    ServicesOtherComponent,
+    CookieComponent
   ],
   imports: [
     BrowserModule,
@@ -52,9 +56,11 @@ import { ServicesFinancialReportingComponent } from './services/services-financi
     NgxWhastappButtonModule,
     QRCodeModule,
     FormsModule,
-    NgbCarouselModule  
+    NgbCarouselModule,
+    ReactiveFormsModule,
+    HttpClientModule  
   ],
-  providers: [NgbCarouselConfig],
+  providers: [NgbCarouselConfig, ContactService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

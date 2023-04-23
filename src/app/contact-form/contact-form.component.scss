@@ -1,54 +1,53 @@
 @import "../../variables.scss";
 
-.contact-form-container-outer {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1200px;
-}
-
-#contact-form-container {
+.contact-us-mail-container {
+    border-radius: 5px;
+    padding: 50px;
+    margin-top: 30px;
+    margin-bottom: 10px;
     background: $color-contact-background;
     color: $color-contact-text;
     width: 100%;
 
-    >div:first-of-type {
-        text-align: center;
-        margin-top: 20px;
+    & .form-control.input {
+        font-size: 20px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        height: 50px;
+        border: none;
+        margin-bottom: 30px;
+        border-bottom: solid $color-primary 3px;
+    }
+
+    & .form-control.text {
+        font-size: 20px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        height: 100px;
+        border-bottom: solid $color-primary 3px;
+    }
+
+    & .form-control.input-err {
+        border-bottom: solid $color-action-error 3px;
+    }
+
+}
+
+.contact-us-btn {
+    font-size: 20px;
+    padding: 20px;
+
+    @media screen and (max-width:991px) {
+        width: 100%;
+    }
+
+    @media screen and (min-width:992px) {
+        width: 300px;
     }
 }
 
-.mission-statement {
-    text-align: justify;
-    padding: 40px 40px 0 40px;
-}
-
-.mission-statement-header {
-    padding-bottom: 5px;
-    border-bottom: solid 3px $color-primary;
-    text-align: left;
-    font-weight: bold;
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-
-.contact-parent {
-    width: 100%;
-    column-gap: 10px;
-    padding: 40px;
-    display: flex;
-}
-
-.contact-parent>* {
-    padding: 10px;
-    border: none;
-    border-radius: 0px;
-    flex: 1;
-}
-
-.contact-parent>input:focus {
-    outline: none;
-}
-
-.contact-parent>button {
-    white-space: nowrap;
+.validation-error-global {
+    font-size: 16px;
+    padding-bottom: 20px;
+    color: $color-action-error;
 }
