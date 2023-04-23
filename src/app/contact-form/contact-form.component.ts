@@ -31,14 +31,10 @@ export class ContactFormComponent implements OnInit {
   }
 
   dimButton() {
+    const btn = document.getElementById("rjlRequestContactBtn") as HTMLButtonElement;
     window.setTimeout(() => {
-      const btn = document.getElementById("rjlRequestContactBtn") as HTMLButtonElement;
       btn.disabled = true;
     }, 0);
-    window.setTimeout(() => {
-      const btn = document.getElementById("rjlRequestContactBtn") as HTMLButtonElement;
-      btn.disabled = false;
-    }, 10000);
   }
 
   onSubmit(formData: FormGroup) {
