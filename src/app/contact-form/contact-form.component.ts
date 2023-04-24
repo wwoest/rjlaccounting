@@ -29,7 +29,7 @@ export class ContactFormComponent implements OnInit {
           COMMENT: new FormControl('How can we help?'),
           VISITOR_IP: new FormControl(''),
         });
-    this.httpClient.get("http://api.ipify.org/?format=json").subscribe((res:any)=>{
+    this.httpClient.get("https://api.ipify.org/?format=json").subscribe((res:any)=>{
       this.visitorIP = res.ip;
       this.formData.controls["VISITOR_IP"].setValue(this.visitorIP);
     });
