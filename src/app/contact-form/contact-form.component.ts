@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
 import { ContactService } from '../shared/contact.service';
+import { CookieService } from 'ngx-cookie-service';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-contact-form',
@@ -13,21 +15,24 @@ export class ContactFormComponent implements OnInit {
   sent = false;
   submitted = false;
   callbackRequested = false;
+  visitorIP = "";
 
-  constructor(private builder: FormBuilder, private contactService: ContactService) { }
+  constructor(private httpClient: HttpClient, private builder: FormBuilder, private contactService: ContactService, private cookieService: CookieService) { }
 
   ngOnInit() {
+    this.callbackRequested = !!this.cookieService.get("RJLCONTACT");
     this.formData = this.builder.group(
-      {
-        fullNameControl: new FormControl('', [Validators.required]),
-        telControl: new FormControl('', [Validators.required]),
-        emailControl: new FormControl('', [Validators.required, Validators.email]),
-        commentControl: new FormControl('How can we help?')
-      });
-
-    if (document.cookie?.includes("RJLCONTACT")) {
-      this.callbackRequested = true;
-    }  
+        {
+          NAME: new FormControl('', [Validators.required]),
+          TELEPHONE: new FormControl('', [Validators.required]),
+          EMAIL: new FormControl('', [Validators.required, Validators.email]),
+          COMMENT: new FormControl('How can we help?'),
+          VISITOR_IP: new FormControl(''),
+        });
+    this.httpClient.get("http://api.ipify.org/?format=json").subscribe((res:any)=>{
+      this.visitorIP = res.ip;
+      this.formData.controls["VISITOR_IP"].setValue(this.visitorIP);
+    });
   }
 
   dimButton() {
@@ -42,9 +47,9 @@ export class ContactFormComponent implements OnInit {
     if (this.formData.valid) {
       this.dimButton();
         const requestedOn = new Date();
-        document.cookie = `RJLCONTACT=${requestedOn.toString()}`;
+        this.cookieService.set("RJLCONTACT", requestedOn.toString());
         this.contactService.emailMessage(formData).subscribe(response => {
-        location.href = 'https://mailthis.to/confirm';
+          location.href = 'https://mailthis.to/confirm';
       }, error => {
         console.log(error);
         alert("We apologise, the information could not be sent. Please contact us directly.");
@@ -53,11 +58,11 @@ export class ContactFormComponent implements OnInit {
   }
 
   checkPlaceholder() {
-    this.formData.controls["commentControl"].setValue("");
+    this.formData.controls["COMMENT"].setValue("");
   }
 
   enableResend() {
     this.callbackRequested = false;    
-    document.cookie = "RJLCONTACT=;expires=Thu,01 Jan 1970 00:00:00 UTC;";
+    this.cookieService.delete("RJLCONTACT");
   }
 }

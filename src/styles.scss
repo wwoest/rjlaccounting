@@ -2,12 +2,14 @@
 @import "variables.scss";
 
 html, body { 
+  scroll-behavior: smooth;
   overflow-x: hidden;
   font-size: 0.75em;
   font-family: $font-family !important;
 }
 
 body { 
+  scroll-behavior: smooth;
   margin: 0; 
   font-size: 14px;
   font-family: $font-family !important;  

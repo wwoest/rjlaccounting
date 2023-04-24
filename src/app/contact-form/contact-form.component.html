@@ -9,27 +9,27 @@
     </div>
     <form [formGroup]="formData" (ngSubmit)="onSubmit(formData.value)" *ngIf="!callbackRequested">
         <div class="container">
-            <h2 class="text-center mb-5">Contact Us</h2>
+            <h2 class="text-center mb-5">Request Callback</h2>
             <div class="row" *ngIf="!sent">
                 <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4">
                     <div class="form-group">
                         <input maxlength="50" type="text" class="form-control input"
-                            [class]="submitted && !formData.controls['fullNameControl'].valid ? 'input-err' : ''"
-                            name="name-field" placeholder="Your name" formControlName="fullNameControl">
+                            [class]="submitted && !formData.controls['NAME'].valid ? 'input-err' : ''"
+                            name="name-field" placeholder="Your name" formControlName="NAME">
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4">
                     <div class="form-group">
                         <input maxlength="80" type="email" class="form-control input"
-                            [class]="submitted && !formData.controls['emailControl'].valid ? 'input-err' : ''"
-                            name="email-field" placeholder="Your e-mail address" formControlName="emailControl">
+                            [class]="submitted && !formData.controls['EMAIL'].valid ? 'input-err' : ''"
+                            name="email-field" placeholder="Your e-mail address" formControlName="EMAIL">
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4">
                     <div class="form-group">
                         <input maxlength="10" type="text" class="form-control input"
-                            [class]="submitted && !formData.controls['telControl'].valid ? 'input-err' : ''"
-                            name="tel-field" placeholder="Your contact number" formControlName="telControl">
+                            [class]="submitted && !formData.controls['TELEPHONE'].valid ? 'input-err' : ''"
+                            name="tel-field" placeholder="Your contact number" formControlName="TELEPHONE">
                     </div>
                 </div>
             </div>
@@ -37,13 +37,14 @@
                 <div class="col-12">
                     <div class="form-group">
                         <textarea (click)="checkPlaceholder()" maxlength="250" class="form-control text"
-                            formControlName="commentControl" name="comment-field"></textarea>
+                            formControlName="COMMENT" name="comment-field"></textarea>
                     </div>
                 </div>
             </div>
             <div class="row text-center mt-5">
                 <div class="col-12">
                     <button id="rjlRequestContactBtn" type="submit" class="btn btn-primary contact-us-btn">Send</button>
+                    <div class="mt-2">Visitor IP {{formData.controls["VISITOR_IP"].value}}</div>
                 </div>
             </div>
         </div>

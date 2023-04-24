@@ -1,4 +1,35 @@
 .profile-pic {
-    max-width: 250px;
+    max-width: 300px;
+    width: 100%;
     margin-bottom: 10px;
+}
+
+.about-content {
+    display: flex;
+}
+
+.profile {
+    margin: 20px;
+    width: 600px;
+}
+
+.information {
+    margin: 20px;
+    flex-grow: 1;
+}
+
+@media all and (max-width: 991px) {
+    .about-content {
+        flex-wrap: wrap;
+    }
+
+    .profile {
+        text-align: center;
+        order: 2;
+    }
+
+    .information {
+        order: 1;
+        min-width: 100%;
+    }
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CookieService } from 'ngx-cookie-service';
 
 @Component({
   selector: 'app-cookie',
@@ -10,18 +11,16 @@ export class CookieComponent implements OnInit {
 
   showCookieDrawer = false;
 
+  constructor(private cookieService: CookieService) {}
+
   ngOnInit() {
-    if (!document.cookie?.includes("RJLCOOKIEACCEPT")) {
-      window.setTimeout(() => {
-        this.showCookieDrawer = true;
-      }, 50);
-    }  
+    this.showCookieDrawer = !this.cookieService.get("RJLCOOKIEACCEPT");
   }
 
   acceptCookies() {
     this.showCookieDrawer = true;
     const cookieAccepted = new Date();
-    document.cookie = `RJLCOOKIEACCEPT=${cookieAccepted.toString}`;
+    this.cookieService.set('RJLCOOKIEACCEPT', cookieAccepted.toString());
   }
 
 }

@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-sm navbar-light bg-dark">
+<nav class="navbar navbar-expand-sm navbar-light bg-dark" [class]="showBorder ? 'navbar-border' : ''">
     <div class="container-fluid">
         <a class="navbar-brand" href="#" [routerLink]="'home'">
             <img class="main-logo" alt="RJL Accounting (Pty) Ltd" src="assets/images/logo_wide.png">
@@ -21,7 +21,7 @@
         <div class="col g-0">
             <app-cookie></app-cookie>
             <router-outlet></router-outlet>
-            <div style="height: 200px;">&nbsp;</div>
+            <div id="page-bottom" style="height: 200px;">&nbsp;</div>
         </div>
     </div>
 </div>

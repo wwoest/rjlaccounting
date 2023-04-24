@@ -26,6 +26,7 @@ import { ServicesFinancialReportingComponent } from './services/services-financi
 import { ContactService } from './shared/contact.service';
 import { HttpClientModule } from '@angular/common/http';
 import { CookieComponent } from './cookie/cookie.component';
+import { CookieService } from 'ngx-cookie-service';
 
 @NgModule({
   declarations: [
@@ -60,7 +61,7 @@ import { CookieComponent } from './cookie/cookie.component';
     ReactiveFormsModule,
     HttpClientModule  
   ],
-  providers: [NgbCarouselConfig, ContactService],
+  providers: [NgbCarouselConfig, ContactService, CookieService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -23,13 +23,6 @@
     </div>
 </div>
 <div class="container">
-    <div class="row">
-        <div class="col-12">
-            <app-contact-form></app-contact-form>
-        </div>
-    </div>
-</div>
-<div class="container">
     <div class="row gx-2 gy-2">
         <div class="col-12 mb-3">
             <app-mission></app-mission>
@@ -44,7 +37,7 @@
                     <div class="spacer-md">&nbsp;</div>
                 </div>
                 <div class="flash-card-footer">
-                    <button (click)="goto('services')" class="btn btn-info bloat">More</button>
+                    <button (click)="goto('services')" class="btn btn-info bloat">Find out more</button>
                 </div>
             </div>
         </div>
@@ -57,7 +50,7 @@
                     <div class="spacer-md">&nbsp;</div>
                 </div>
                 <div class="flash-card-footer">
-                    <button (click)="goto('resources')" class="btn btn-info bloat">More</button>
+                    <button (click)="goto('resources')" class="btn btn-info bloat">View resources</button>
                 </div>
             </div>
         </div>
@@ -70,9 +63,16 @@
                     <div class="spacer-md">&nbsp;</div>
                 </div>
                 <div class="flash-card-footer">
-                    <button (click)="goto('contact')" class="btn btn-info bloat">More</button>
+                    <button (click)="goto('contact')" class="btn btn-info bloat">View contact details</button>
                 </div>
             </div>
+        </div>
+    </div>
+</div>
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-12">
+            <app-contact-form></app-contact-form>
         </div>
     </div>
 </div>
