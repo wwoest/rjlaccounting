@@ -1,0 +1,31 @@
+.main-logo {
+    margin-left: 3px;
+    margin-top: 5px;
+    margin-bottom: 2px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width:650px) {
+    .main-logo {
+        height: 40px;
+        width: 190px;
+        background-image: url('./../assets/images/logo_wide_sm.png');
+    }
+}
+
+@media screen and (min-width:651px) and (max-width:1199px) {
+    .main-logo {
+        height: 50px;
+        width: 238px;
+        background-image: url('./../assets/images/logo_wide_md.png');
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .main-logo {
+        height: 70px;
+        width: 333px;
+        background-image: url('./../assets/images/logo_wide.png');
+    }
+}
