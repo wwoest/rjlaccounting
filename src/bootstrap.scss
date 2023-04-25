@@ -14,6 +14,30 @@
   }
 }
 
+@media screen and (max-width:650px) {
+  #navbarSupportedContent>button {
+      padding: 5px;
+      font-size: 10px;
+      color: #000000;
+      background: #ffffff;
+      min-width: 75px;
+    }
+}
+
+@media screen and (min-width:651px) and (max-width:1199px) {
+  #navbarSupportedContent>button {
+      padding: 5px 10px 5px 10px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+  #navbarSupportedContent>button {
+      min-width: 120px;
+      padding: 10px 15px 10px 15px;
+      font-size: 16px;
+    }
+}
+
 .btn:disabled {
   background: $color-disabled-background !important;
   color: $color-disabled-text !important;
