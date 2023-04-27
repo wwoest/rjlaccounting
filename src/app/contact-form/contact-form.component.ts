@@ -28,7 +28,6 @@ export class ContactFormComponent implements OnInit {
           EMAIL: new FormControl('', Validators.compose([Validators.email, Validators.required])),
           COMMENT: new FormControl('How can we help?'),
           VISITOR_IP: new FormControl(''),
-          _confirmation: new FormControl('Thank you for contacting RJL Accounting!')
         });
     this.httpClient.get("https://api.ipify.org/?format=json").subscribe((res:any)=>{
       this.visitorIP = res.ip;
