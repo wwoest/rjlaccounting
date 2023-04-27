@@ -17,7 +17,7 @@
 @media screen and (max-width:650px) {
   #navbarSupportedContent>button {
       padding: 5px;
-      font-size: 10px;
+      font-size: 12px;
       color: #000000;
       background: #ffffff;
       min-width: 75px;
@@ -27,14 +27,24 @@
 @media screen and (min-width:651px) and (max-width:1199px) {
   #navbarSupportedContent>button {
       padding: 5px 10px 5px 10px;
+            border-top-left-radius: 10px !important;
+              border-bottom-left-radius: 3px !important;
+              border-top-right-radius: 3px !important;
+              border-bottom-right-radius: 10px !important;
+              font-size: 13px;
     }
 }
 
 @media screen and (min-width:1200px) {
   #navbarSupportedContent>button {
+      margin-left: 3px;
+      border-top-left-radius: 10px !important;
+      border-bottom-left-radius: 3px !important;
+      border-top-right-radius: 3px !important;
+      border-bottom-right-radius: 10px !important;
       min-width: 120px;
-      padding: 10px 15px 10px 15px;
-      font-size: 16px;
+      padding: 5px 10px 5px 10px;
+      font-size: 13px;
     }
 }
 
@@ -67,21 +77,22 @@
 }
 
 .btn-info,
-.btn-info:hover {
-  background: $color-action-info;
+.btn-info:hover,
+.btn-info:active {
+  background: $color-action-info !important;
   color: $color-action-info-text;
   border: solid 1px $color-action-info-border;
 }
 
 .bg-dark {
-  background: rgba(1, 82, 136, 1);
-  background: -moz-linear-gradient(left, rgba(1, 82, 136, 1) 0%, rgba(0, 159, 251, 1) 100%);
-  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(1, 82, 136, 1)), color-stop(100%, rgba(0, 159, 251, 1)));
-  background: -webkit-linear-gradient(left, rgba(1, 82, 136, 1) 0%, rgba(0, 159, 251, 1) 100%);
-  background: -o-linear-gradient(left, rgba(1, 82, 136, 1) 0%, rgba(0, 159, 251, 1) 100%);
-  background: -ms-linear-gradient(left, rgba(1, 82, 136, 1) 0%, rgba(0, 159, 251, 1) 100%);
-  background: linear-gradient(to right, rgba(1, 82, 136, 1) 0%, rgba(0, 159, 251, 1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#015288', endColorstr='#009ffb', GradientType=1);
+  background: rgba(0, 72, 135, 1);
+  background: -moz-linear-gradient(left, rgba(0, 72, 135, 1) 0%, rgba(0, 159, 251, 1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0, 72, 135, 1)), color-stop(100%, rgba(0, 159, 251, 1)));
+  background: -webkit-linear-gradient(left, rgba(0, 72, 135, 1) 0%, rgba(0, 159, 251, 1) 100%);
+  background: -o-linear-gradient(left, rgba(0, 72, 135, 1) 0%, rgba(0, 159, 251, 1) 100%);
+  background: -ms-linear-gradient(left, rgba(0, 72, 135, 1) 0%, rgba(0, 159, 251, 1) 100%);
+  background: linear-gradient(to right, rgba(0, 72, 135, 1) 0%, rgba(0, 159, 251, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#004887', endColorstr='#009ffb', GradientType=1);
 }
 
 .bg-light {

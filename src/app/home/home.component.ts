@@ -19,11 +19,6 @@ export class HomeComponent implements OnInit, OnDestroy {
   constructor(private router: Router, private cookieService: CookieService){}
 
   ngOnInit() {
-    if (!!this.cookieService.get("RJLCONTACT")) {
-      window.setTimeout(() => {
-        document.querySelector("#page-bottom")?.scrollIntoView();
-      }, 300);
-    }
   }
 
   ngOnDestroy() {

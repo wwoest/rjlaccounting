@@ -1,0 +1,67 @@
+.fixed-card > div:first-of-type {
+    display: inline-block;
+    min-height: 100%;
+    width: 100%;
+}
+
+.fixed-card {
+
+
+    padding: 20px;
+    border-radius: 3px;
+    
+    background: #f2f2f2;
+    color: #000000;
+
+    @media screen and (min-width:576px) {
+        height: 285px;
+    }
+
+
+    .header {
+        font-weight: bold;
+        padding-bottom: 10px;
+    }
+    .content {
+        
+        overflow: auto;
+        padding-bottom: 10px;
+
+    @media screen and (min-width:576px) {
+            height: 150px;
+        }
+
+    }
+    .footer>button {
+        @media screen and (max-width:650px) {
+            font-size: 14px;
+            margin: 20px 10px 20px 0;
+            padding: 8px !important;
+            width: 75%;
+            border-top-left-radius: 10px !important;
+            border-bottom-left-radius: 3px !important;
+            border-top-right-radius: 3px !important;
+            border-bottom-right-radius: 10px !important;
+        }
+        @media screen and (min-width:651px) and (max-width:1199px) {
+            font-size: 14px;
+            margin: 20px 10px 20px 0;
+            padding: 5px !important;
+            width: 75%;
+            border-top-left-radius: 10px !important;
+            border-bottom-left-radius: 3px !important;
+            border-top-right-radius: 3px !important;
+            border-bottom-right-radius: 10px !important;
+        }
+        @media screen and (min-width:1200px) {
+            font-size: 16px;
+            margin: 20px 10px 20px 0;
+            padding: 8px !important;
+            width: 200px;
+            border-top-left-radius: 10px !important;
+            border-bottom-left-radius: 3px !important;
+            border-top-right-radius: 3px !important;
+            border-bottom-right-radius: 10px !important;
+        }
+    }
+}

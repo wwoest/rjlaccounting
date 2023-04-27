@@ -35,6 +35,15 @@ a, a:active, a:visited, a:invalid, a:focus {
   border-bottom: solid 3px $color-section-header-border;
 }
 
+.section-header-no-line {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  width: 100%;
+}
+
 .section-subheader {
   font-weight: bolder;
   margin-bottom: 20px;
@@ -138,16 +147,80 @@ a, button {
   bottom: 0;
   width: 100%;
   & button {
-    font-size: 16px;
-    margin: 0 10px 20px 0;
-    padding: 20px !important;
-    min-width: 200px;
+
+
+  @media screen and (max-width:650px) {
+            font-size: 14px;
+              margin: 0 10px 20px 0;
+              padding: 8px !important;
+              min-width: 75%;
+              border-top-left-radius: 10px !important;
+                border-bottom-left-radius: 3px !important;
+                border-top-right-radius: 3px !important;
+                border-bottom-right-radius: 10px !important;
+  }
+
+  @media screen and (min-width:651px) and (max-width:1199px) {
+            font-size: 14px;
+              margin: 0 10px 20px 0;
+              padding: 5px !important;
+              min-width: 200px;
+              border-top-left-radius: 10px !important;
+                border-bottom-left-radius: 3px !important;
+                border-top-right-radius: 3px !important;
+                border-bottom-right-radius: 10px !important;
+  }
+
+  @media screen and (min-width:1200px) {
+        font-size: 16px;
+          margin: 0 10px 20px 0;
+          padding: 8px !important;
+          min-width: 200px;
+          border-top-left-radius: 10px !important;
+            border-bottom-left-radius: 3px !important;
+            border-top-right-radius: 3px !important;
+            border-bottom-right-radius: 10px !important;
+  }
+
+
+
   }
   & a {
-    font-size: 16px;
-    margin: 0 10px 20px 0;
-    padding: 10px !important;
-    min-width: 200px;
+
+
+  @media screen and (max-width:650px) {
+      font-size: 14px;
+      margin: 0 10px 20px 0;
+      padding: 8px !important;
+      min-width: 75%;
+      border-top-left-radius: 10px !important;
+        border-bottom-left-radius: 3px !important;
+        border-top-right-radius: 3px !important;
+        border-bottom-right-radius: 10px !important;
+    }
+  
+    @media screen and (min-width:651px) and (max-width:1199px) {
+      font-size: 14px;
+      margin: 0 10px 20px 0;
+      padding: 5px !important;
+      min-width: 200px;
+      border-top-left-radius: 10px !important;
+        border-bottom-left-radius: 3px !important;
+        border-top-right-radius: 3px !important;
+        border-bottom-right-radius: 10px !important;
+    }
+  
+    @media screen and (min-width:1200px) {
+      font-size: 16px;
+      margin: 0 10px 20px 0;
+      padding: 8px !important;
+      min-width: 200px;
+      border-top-left-radius: 10px !important;
+        border-bottom-left-radius: 3px !important;
+        border-top-right-radius: 3px !important;
+        border-bottom-right-radius: 10px !important;
+    }
+
     color: $color-a-contrast !important;
   }
 }

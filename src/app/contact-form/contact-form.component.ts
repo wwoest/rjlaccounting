@@ -24,10 +24,11 @@ export class ContactFormComponent implements OnInit {
     this.formData = this.builder.group(
         {
           NAME: new FormControl('', [Validators.required]),
-          TELEPHONE: new FormControl('', [Validators.required]),
-          EMAIL: new FormControl('', [Validators.required, Validators.email]),
+          TELEPHONE: new FormControl('', Validators.compose([Validators.minLength(10), Validators.required])),
+          EMAIL: new FormControl('', Validators.compose([Validators.email, Validators.required])),
           COMMENT: new FormControl('How can we help?'),
           VISITOR_IP: new FormControl(''),
+          _confirmation: new FormControl('Thank you for contacting RJL Accounting!')
         });
     this.httpClient.get("https://api.ipify.org/?format=json").subscribe((res:any)=>{
       this.visitorIP = res.ip;
@@ -39,6 +40,7 @@ export class ContactFormComponent implements OnInit {
     const btn = document.getElementById("rjlRequestContactBtn") as HTMLButtonElement;
     window.setTimeout(() => {
       btn.disabled = true;
+      btn.textContent = "Please wait...";
     }, 0);
   }
 
