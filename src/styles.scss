@@ -1,21 +1,26 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:500,700");
 @import "variables.scss";
 
-html, body { 
+html,
+body {
   scroll-behavior: smooth;
   overflow-x: hidden;
   font-size: 0.75em;
   font-family: $font-family !important;
 }
 
-body { 
+body {
   scroll-behavior: smooth;
-  margin: 0; 
+  margin: 0;
   font-size: 14px;
-  font-family: $font-family !important;  
+  font-family: $font-family !important;
 }
 
-a, a:active, a:visited, a:invalid, a:focus {
+a,
+a:active,
+a:visited,
+a:invalid,
+a:focus {
   color: $color-primary-a;
 }
 
@@ -26,7 +31,7 @@ a, a:active, a:visited, a:invalid, a:focus {
 }
 
 .section-header {
-  margin-top: 20px; 
+  margin-top: 20px;
   margin-bottom: 20px;
   padding-bottom: 10px;
   font-size: 20px;
@@ -78,19 +83,28 @@ a, a:active, a:visited, a:invalid, a:focus {
   min-height: 100px;
 }
 
-a:focus, a:active {
+a:focus,
+a:active {
   color: $color-a-normal;
   border: none;
 }
 
-a, button {
+a,
+button {
   border: none !important;
   border-radius: $radius-button !important;
 }
 
 .alert.alert-info {
-  background: $alert-info-background;
-  color: $alert-info-text;
+  color: #ffffff;
+  background: rgba(0, 72, 135, 1);
+  background: -moz-linear-gradient(left, rgba(0, 72, 135, 1) 0%, rgba(0, 159, 251, 1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0, 72, 135, 1)), color-stop(100%, rgba(0, 159, 251, 1)));
+  background: -webkit-linear-gradient(left, rgba(0, 72, 135, 1) 0%, rgba(0, 159, 251, 1) 100%);
+  background: -o-linear-gradient(left, rgba(0, 72, 135, 1) 0%, rgba(0, 159, 251, 1) 100%);
+  background: -ms-linear-gradient(left, rgba(0, 72, 135, 1) 0%, rgba(0, 159, 251, 1) 100%);
+  background: linear-gradient(to right, rgba(0, 72, 135, 1) 0%, rgba(0, 159, 251, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#004887', endColorstr='#009ffb', GradientType=1);
   border: $alert-info-border;
   border-radius: $radius-alert-info;
 }
@@ -115,6 +129,7 @@ a, button {
   border: none !important;
   background-color: $color-flash-card-background;
   text-align: center;
+
   @media screen and (min-width:600px) {
     height: 100%;
   }
@@ -128,12 +143,14 @@ a, button {
   text-align: center;
   font-size: 10px;
   color: #333333;
+
   & img {
     max-width: 250px;
     width: 100%;
     border-radius: 0px;
     margin-bottom: 10px;
   }
+
   & a {
     font-size: 10px;
     color: #333333;
@@ -146,44 +163,18 @@ a, button {
   right: 0;
   bottom: 0;
   width: 100%;
+
   & button {
 
 
-  @media screen and (max-width:650px) {
-    font-size: 14px;
-    margin: 0 10px 20px 0;
-    padding: 8px !important;
-    min-width: 75%;
-    border-radius: 0px !important;
-  }
-
-  @media screen and (min-width:651px) and (max-width:1199px) {
-    font-size: 14px;
-    margin: 0 10px 20px 0;
-    padding: 5px !important;
-    min-width: 200px;
-    border-radius: 0px !important;
-  }
-
-  @media screen and (min-width:1200px) {
-    font-size: 16px;
-    margin: 0 10px 20px 0;
-    padding: 8px !important;
-    min-width: 200px;
-    border-radius: 0px !important;
-  }
-
-  }
-  & a {
-
-  @media screen and (max-width:650px) {
+    @media screen and (max-width:650px) {
       font-size: 14px;
       margin: 0 10px 20px 0;
       padding: 8px !important;
       min-width: 75%;
       border-radius: 0px !important;
     }
-  
+
     @media screen and (min-width:651px) and (max-width:1199px) {
       font-size: 14px;
       margin: 0 10px 20px 0;
@@ -191,7 +182,35 @@ a, button {
       min-width: 200px;
       border-radius: 0px !important;
     }
-  
+
+    @media screen and (min-width:1200px) {
+      font-size: 16px;
+      margin: 0 10px 20px 0;
+      padding: 8px !important;
+      min-width: 200px;
+      border-radius: 0px !important;
+    }
+
+  }
+
+  & a {
+
+    @media screen and (max-width:650px) {
+      font-size: 14px;
+      margin: 0 10px 20px 0;
+      padding: 8px !important;
+      min-width: 75%;
+      border-radius: 0px !important;
+    }
+
+    @media screen and (min-width:651px) and (max-width:1199px) {
+      font-size: 14px;
+      margin: 0 10px 20px 0;
+      padding: 5px !important;
+      min-width: 200px;
+      border-radius: 0px !important;
+    }
+
     @media screen and (min-width:1200px) {
       font-size: 16px;
       margin: 0 10px 20px 0;

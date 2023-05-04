@@ -6,7 +6,7 @@
 
     a {
         text-decoration: none;
-        color: #ffffff;
+        color: #000000;
         padding: 5px;
     }
 
@@ -19,20 +19,13 @@
     }
 
     width: 100%;
-    color: #ffffff !important;
+    color: #000000 !important;
     text-align: center;
-    background: rgba(0, 159, 251, 1);
-    background: -moz-linear-gradient(top, rgba(0, 159, 251, 1) 0%, rgba(0, 72, 135, 1) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0, 159, 251, 1)), color-stop(100%, rgba(0, 72, 135, 1)));
-    background: -webkit-linear-gradient(top, rgba(0, 159, 251, 1) 0%, rgba(0, 72, 135, 1) 100%);
-    background: -o-linear-gradient(top, rgba(0, 159, 251, 1) 0%, rgba(0, 72, 135, 1) 100%);
-    background: -ms-linear-gradient(top, rgba(0, 159, 251, 1) 0%, rgba(0, 72, 135, 1) 100%);
-    background: linear-gradient(to bottom, rgba(0, 159, 251, 1) 0%, rgba(0, 72, 135, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#009ffb', endColorstr='#004887', GradientType=0);
+    background: #d9d9d9;
 }
 
 .footer > a {
-    color: #333333;
+    color: #000000;
 }
 
 .slider-img {
@@ -44,14 +37,11 @@
 }
 
 .slider {
-    background: $color-slider-background;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    background: #ededed;
+    padding-top: 15px;
+    padding-bottom: 15px;
     margin-bottom: 15px;
     margin-top: 0;
-    -webkit-box-shadow: 0px -3px 7px 0px rgba(189, 189, 189, 1);
-    -moz-box-shadow: 0px -3px 7px 0px rgba(189, 189, 189, 1);
-    box-shadow: 0px -3px 7px 0px rgba(189, 189, 189, 1);
 
     @media (max-width: 980px) {
         display: none;
