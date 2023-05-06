@@ -20,7 +20,7 @@ export class ContactFormComponent implements OnInit {
   constructor(private httpClient: HttpClient, private builder: FormBuilder, private contactService: ContactService, private cookieService: CookieService) { }
 
   ngOnInit() {
-    this.callbackRequested = !!this.cookieService.get("RJLCONTACT");
+    this.callbackRequested = !!(this.cookieService.get("RJLCONTACT") || (window.sessionStorage.getItem("RJLCONTACT") === 'sent'));
     this.formData = this.builder.group(
         {
           NAME: new FormControl('', [Validators.required]),
@@ -48,6 +48,7 @@ export class ContactFormComponent implements OnInit {
     if (this.formData.valid) {
       this.dimButton();
         const requestedOn = new Date();
+        window.sessionStorage.setItem("RJLCONTACT", "sent");
         this.cookieService.set("RJLCONTACT", requestedOn.toString());
         this.contactService.emailMessage(formData).subscribe(response => {
           location.href = 'https://mailthis.to/confirm';
@@ -65,5 +66,6 @@ export class ContactFormComponent implements OnInit {
   enableResend() {
     this.callbackRequested = false;    
     this.cookieService.delete("RJLCONTACT");
+    window.sessionStorage.removeItem("RJLCONTACT");
   }
 }
