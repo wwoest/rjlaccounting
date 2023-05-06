@@ -322,3 +322,86 @@ button {
   }
 
 }
+
+.contact-us-confirm {
+  background: #ffffff;
+  padding: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  .btn-primary {
+    margin: 0;
+  }
+}
+
+.contact-us-mail-container {
+  border-radius: 0px;
+  padding: 20px;
+  background: $color-contact-background;
+  color: $color-contact-text;
+  width: 100%;
+
+  & .form-control.input {
+    color: #000000;
+    font-size: 14px;
+    border-radius: 0px;
+    height: 50px;
+    border: none;
+    margin-bottom: 30px;
+    border-bottom: solid $color-primary 3px;
+
+    &::placeholder {
+      color: #000000 !important;
+    }
+  }
+
+  & .form-control.text {
+    font-size: 14px;
+    border-radius: 0px;
+    height: 100px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: solid $color-primary 3px;
+    color: #000000 !important;
+  }
+
+  & .form-control.input-err {
+    border-bottom: solid $color-action-error 3px;
+  }
+
+}
+
+.contact-us-btn {
+  @media screen and (max-width:650px) {
+    font-size: 14px;
+    margin: 0 0 10px 0;
+    padding: 8px !important;
+    min-width: 75%;
+    border-radius: 0px !important;
+  }
+
+  @media screen and (min-width:651px) and (max-width:1199px) {
+    font-size: 14px;
+    margin: 0 0 10px 0;
+    padding: 5px !important;
+    min-width: 200px;
+    border-radius: 0px !important;
+  }
+
+  @media screen and (min-width:1200px) {
+    font-size: 16px;
+    margin: 0 0 10px 0;
+    padding: 8px !important;
+    min-width: 200px;
+    border-radius: 0px !important;
+  }
+}
+
+.validation-error-global {
+  font-size: 16px;
+  padding-bottom: 20px;
+  color: $color-action-error;
+}
