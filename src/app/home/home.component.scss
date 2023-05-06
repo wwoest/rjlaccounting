@@ -37,6 +37,10 @@
     cursor: pointer;
 }
 
+.rjl-home-carousel {
+    animation: fade 0.5s ease-in !important;
+}
+
 @media screen and (max-width:768px) {
     .rjl-home-carousel {
         display: none;

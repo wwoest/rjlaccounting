@@ -1,5 +1,4 @@
-import { Component } from '@angular/core';
-import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-services-payroll',
@@ -7,9 +6,10 @@ import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./services-payroll.component.scss']
 })
 export class ServicesPayrollComponent {
-  constructor(public activeModal: NgbActiveModal) {}
+  
+  @Output() closeServiceCardEvent = new EventEmitter<void>();
+  closeServiceCard(){
+    this.closeServiceCardEvent.emit();
+  } 
 
-  close(): void {
-    this.activeModal.close();
-  }
 }

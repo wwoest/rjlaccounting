@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:500,700");
 @import "variables.scss";
+@import "animations.scss";
 
 html,
 body {
@@ -96,17 +97,11 @@ button {
 }
 
 .alert.alert-info {
-  color: #ffffff;
-  background: rgba(0, 72, 135, 1);
-  background: -moz-linear-gradient(left, rgba(0, 72, 135, 1) 0%, rgba(0, 159, 251, 1) 100%);
-  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0, 72, 135, 1)), color-stop(100%, rgba(0, 159, 251, 1)));
-  background: -webkit-linear-gradient(left, rgba(0, 72, 135, 1) 0%, rgba(0, 159, 251, 1) 100%);
-  background: -o-linear-gradient(left, rgba(0, 72, 135, 1) 0%, rgba(0, 159, 251, 1) 100%);
-  background: -ms-linear-gradient(left, rgba(0, 72, 135, 1) 0%, rgba(0, 159, 251, 1) 100%);
-  background: linear-gradient(to right, rgba(0, 72, 135, 1) 0%, rgba(0, 159, 251, 1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#004887', endColorstr='#009ffb', GradientType=1);
-  border: $alert-info-border;
-  border-radius: $radius-alert-info;
+  font-size: 13px;
+  color: #ffffff !important;
+  background: #009ffb !important;
+  border: none !important;
+  border-radius: 0 !important;
 }
 
 .ngx-whatsapp-button-float {
@@ -260,4 +255,58 @@ button {
   min-width: 165px;
   padding: 3px;
   transition: 0.3s;
+}
+
+.service-feature-card {
+  color: #ffffff;
+  background: #004887;
+  padding: 50px;
+  animation: fade 0.4s ease-in;
+
+  @media screen and (min-width:1200px) {
+    margin-left: 15%;
+    width: 75%;
+  }
+
+  .header {
+    border-bottom: solid 3px #ffffff;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    font-size: 25px;
+  }
+
+  .content {
+    text-align: left;
+    padding-bottom: 20px;
+  }
+
+  .footer>button {
+    color: #004887 !important;
+    background-color: #ffffff !important;
+
+    @media screen and (max-width:650px) {
+      font-size: 14px;
+      margin: 20px 10px 20px 0;
+      padding: 8px !important;
+      width: 75%;
+      border-radius: 0px !important;
+    }
+
+    @media screen and (min-width:651px) and (max-width:1199px) {
+      font-size: 14px;
+      margin: 20px 10px 20px 0;
+      padding: 5px !important;
+      width: 75%;
+      border-radius: 0px !important;
+    }
+
+    @media screen and (min-width:1200px) {
+      font-size: 16px;
+      margin: 20px 10px 20px 0;
+      padding: 8px !important;
+      width: 200px;
+      border-radius: 0px !important;
+    }
+  }
+
 }

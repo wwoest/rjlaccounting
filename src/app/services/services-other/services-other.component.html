@@ -1,18 +1,27 @@
-<div class="modal-header">
-    <h4 class="modal-title" id="modal-basic-title">Accounting Services</h4>
-    <button type="button" class="btn-close" aria-label="Close" (click)="close()"></button>
-</div>
-<div class="modal-body">
-    <ul>
-        <li>Monthly Accounting Services</li>
-        <li>Annual Returns for Corporate Entities</li>
-        <li>Registrations for:</li>
-        <ul>
-            <li>New Companies</li>
-            <li>Unemployment Insurance Fund (UIF) at the Department of Labour</li>
-            <li>Compensation Commissioner (COIDA)</li>
-            <li>Income Tax, Payroll Taxes (UIF, SDL & PAYE), Value Added Tax (VAT) & Provisional Tax at SARS</li>
-        </ul>
-        <li>Commissioner of Oaths</li>
-    </ul>
+<div class="row gy-2">
+    <div class="col-12">
+        <div class="service-feature-card">
+            <div class="text-center header">Accounting Services</div>
+            <div class="content">
+                
+Monthly Accounting Services<br>
+Annual Returns for Corporate Entities<br>
+Commissioner of Oaths<br>
+Registrations for:<br>
+
+<ul>
+<li>New Companies</li>
+<li>Unemployment Insurance Fund (UIF) at the Department of Labour</li>
+<li>Compensation Commissioner (COIDA)</li>
+<li>Income Tax, Payroll Taxes (UIF, SDL & PAYE), Value Added Tax (VAT) & Provisional Tax at SARS</li>
+</ul>
+    
+    
+
+            </div>
+            <div class="text-center footer">
+                <button (click)="closeServiceCard()" class="btn btn-info bloat">Back to all Services</button>
+            </div>
+        </div>
+    </div>
 </div>

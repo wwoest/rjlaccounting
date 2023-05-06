@@ -1,5 +1,4 @@
-import { Component } from '@angular/core';
-import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-services-other',
@@ -7,9 +6,10 @@ import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./services-other.component.scss']
 })
 export class ServicesOtherComponent {
-  constructor(public activeModal: NgbActiveModal) {}
 
-  close(): void {
-    this.activeModal.close();
-  }
+ @Output() closeServiceCardEvent = new EventEmitter<void>();
+  closeServiceCard(){
+    this.closeServiceCardEvent.emit();
+  } 
+
 }

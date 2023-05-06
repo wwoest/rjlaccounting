@@ -1,14 +1,18 @@
-<div class="modal-header">
-    <h4 class="modal-title" id="modal-basic-title">Payroll Services</h4>
-    <button type="button" class="btn-close" aria-label="Close" (click)="close()"></button>
-</div>
-<div class="modal-body">
-    <ul>
-        <li>Monthly Payroll Function</li>
-        <li>Monthly Submissions of Returns (EMP201)</li>
-        <li>Bi-Annual & Annual IRP5 Reconciliations (EMP501)</li>
-        <li>Monthly UIF Submissions at the Department of Labour</li>
-        <li>Payroll Verifications & Objections at SARS</li>
-        <li>Completion & Submission of Return of Earnings (ROA) for Workmen's Compensation Commissioner</li>
-    </ul>
+<div class="row gy-2">
+    <div class="col-12">
+        <div class="service-feature-card">
+            <div class="text-center header">Payroll Services</div>
+            <div class="content">
+                Monthly Payroll Function<br>
+                Monthly Submissions of Returns (EMP201)<br>
+                Bi-Annual & Annual IRP5 Reconciliations (EMP501)<br>
+                Monthly UIF Submissions at the Department of Labour<br>
+                Payroll Verifications & Objections at SARS<br>
+                Completion & Submission of Return of Earnings (ROA) for Workmen's Compensation Commissioner
+            </div>
+            <div class="text-center footer">
+                <button (click)="closeServiceCard()" class="btn btn-info bloat">Back to all Services</button>
+            </div>
+        </div>
+    </div>
 </div>
