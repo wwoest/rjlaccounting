@@ -28,7 +28,7 @@ export class ContactFormComponent implements OnInit {
           EMAIL: new FormControl('', Validators.compose([Validators.email, Validators.required])),
           COMMENT: new FormControl('How can we help?'),
           VISITOR_IP: new FormControl(''),
-          _after: new FormControl('https://rjl-accounting.web.app/'),
+          _after: new FormControl('https://rjl-accounting.web.app/services'),
           _replyto: new FormControl('renier@rjlaccounting.co.za'),
           _subject: new FormControl('Thank you for contacting RJL Accounting'),
           _confirmation: new FormControl('Thank you for contacting RJL Accounting'),
