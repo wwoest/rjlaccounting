@@ -31,78 +31,9 @@
     }
 }
 
-// .service-card>div:first-of-type {
-//     display: inline-block;
-//     min-height: 100%;
-//     width: 100%;
-// }
-
-// .service-card.fade-1 {
-//     animation: fade 0.2s ease-in;
-// }
-
-// .service-card.fade-2 {
-//     animation: fade 0.4s ease-in;
-// }
-
-// .service-card.fade-3 {
-//     animation: fade 0.8s ease-in;
-// }
-
-// .service-card.fade-4 {
-//     animation: fade 1s ease-in;
-// }
-
-// .service-card {
-//     padding: 20px;
-//     border-radius: 0px;
-//     background: #f2f2f2;
-//     color: #000000;
-
-//     @media screen and (min-width:576px) {
-//         height: 285px;
-//     }
-
-
-//     .header {
-//         font-weight: bold;
-//         padding-bottom: 10px;
-//     }
-
-//     .content {
-
-//         overflow: auto;
-//         padding-bottom: 10px;
-
-//         @media screen and (min-width:576px) {
-//             height: 150px;
-//         }
-
-//     }
-
-//     .footer>button {
-//         @media screen and (max-width:650px) {
-//             font-size: 14px;
-//             margin: 20px 10px 20px 0;
-//             padding: 8px !important;
-//             width: 75%;
-//             border-radius: 0px !important;
-//         }
-
-//         @media screen and (min-width:651px) and (max-width:1199px) {
-//             font-size: 14px;
-//             margin: 20px 10px 20px 0;
-//             padding: 5px !important;
-//             width: 75%;
-//             border-radius: 0px !important;
-//         }
-
-//         @media screen and (min-width:1200px) {
-//             font-size: 16px;
-//             margin: 20px 10px 20px 0;
-//             padding: 8px !important;
-//             width: 200px;
-//             border-radius: 0px !important;
-//         }
-//     }
-// }
+.rjl-whatsapp {
+    z-index: 9999;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
