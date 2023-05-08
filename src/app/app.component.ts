@@ -11,7 +11,7 @@ export class AppComponent implements OnInit {
   title = 'RJL Accounting (Pty) Ltd';
 
   showBorder = false;
-
+  
   constructor(private cookieService: CookieService) {}
 
   ngOnInit() {

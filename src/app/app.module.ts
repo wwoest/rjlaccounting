@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -27,6 +27,8 @@ import { ContactService } from './shared/contact.service';
 import { HttpClientModule } from '@angular/common/http';
 import { CookieComponent } from './cookie/cookie.component';
 import { CookieService } from 'ngx-cookie-service';
+import { ScriptService } from './shared/script.service';
+import { CalculatorsComponent } from './calculators/calculators.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +48,8 @@ import { CookieService } from 'ngx-cookie-service';
     ServicesFinancialReportingComponent,
     ServicesPayrollComponent,
     ServicesOtherComponent,
-    CookieComponent
+    CookieComponent,
+    CalculatorsComponent
   ],
   imports: [
     BrowserModule,
@@ -62,7 +65,10 @@ import { CookieService } from 'ngx-cookie-service';
     ReactiveFormsModule,
     HttpClientModule  
   ],
-  providers: [NgbCarouselConfig, ContactService, CookieService],
-  bootstrap: [AppComponent]
+  providers: [NgbCarouselConfig, ContactService, CookieService, ScriptService],
+  bootstrap: [AppComponent],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
+  ],
 })
 export class AppModule { }

@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="section-header">Calculators</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col mt-1">
+            <div class="alert alert-info" role="alert">
+                Please note that we cannot be held responsible for any inaccuracies or errors that may occur due to the
+                use of these
+                calculators, as they are sourced from external providers.
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-3 mt-3" *ngIf="currencyLoaded">
+            <fxwidget-cc amount="100" decimals="2" large="false" shadow="false" symbol="false" grouping="true"
+                from="USD" to="EUR" background-color="#004887" border-radius="0.1" pop-curr="ZAR"></fxwidget-cc>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-3 mt-3" *ngIf="exchangeLoaded">
+            <fxwidget-er inverse="false" amount="100" decimals="2" large="false" shadow="true" symbol="true" flag="true"
+                changes="true" grouping="true" main-curr="ZAR" sel-curr="BTC,EUR,GBP,AUD,CNY,JPY"
+                background-color="#004887" border-radius="0.1"></fxwidget-er>
+        </div>
+    </div>
+</div>

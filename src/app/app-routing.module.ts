@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { ResourcesComponent } from './resources/resources.component';
 import { ServicesComponent } from './services/services.component';
 import { TermsComponent } from './terms/terms.component';
+import { CalculatorsComponent } from './calculators/calculators.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -20,6 +21,8 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'about', component: AboutComponent },
   { path: 'e-card', component: EcardComponent },
+  { path: 'calc', component: CalculatorsComponent },
+  
 ];
 
 @NgModule({
