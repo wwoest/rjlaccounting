@@ -20,6 +20,12 @@
     animation: fade 1s ease-in;
 }
 
+.services-extended {
+    @media screen and (max-width:1199px) {
+        display: none;
+    }
+}
+
 .service-card {
     border-top: solid 3px #004887;
     padding: 20px;
@@ -30,7 +36,6 @@
     @media screen and (min-width:576px) {
         height: 285px;
     }
-
 
     .header {
         font-weight: bold;

@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-sm navbar-light bg-dark" [class]="showBorder ? 'navbar-border' : ''">
+<nav class="navbar navbar-expand-md navbar-light bg-dark" [class]="showBorder ? 'navbar-border' : ''">
     <div class="container-fluid">
         <a class="navbar-brand" href="#" [routerLink]="'home'">
             <div class="main-logo">&nbsp;</div>
@@ -10,6 +10,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+            <button style="font-size: 25px; border-bottom: none !important; min-width: inherit !important; padding-bottom: 0;">
+                <span tooltipClass="rjl-tooltip-custom" [openDelay]="300" [closeDelay]="500" 
+                    placement="bottom" ngbTooltip="Send us a Whatsapp" (click)="openWhatsApp()" class="bi bi-whatsapp"></span></button>
             <button routerLinkActive="active" type="button" class="btn" [routerLink]="'services'">Our Services</button>
             <button routerLinkActive="active" type="button" class="btn" [routerLink]="'resources'">Resources</button>
             <button routerLinkActive="active" type="button" class="btn" [routerLink]="'about'">About Us</button>
@@ -22,7 +25,7 @@
         <div class="col g-0">
             <app-cookie></app-cookie>
             <router-outlet></router-outlet>
-            <jjva-ngx-whatsapp-button [ngx_whatsapp_phone]="'+27828254362'" class="rjl-whatsapp"
+            <jjva-ngx-whatsapp-button id="rjlWhatsapp" [ngx_whatsapp_phone]="'+27828254362'" class="rjl-whatsapp"
                 [ngx_whatsapp_text]="'RJL Accounting (Pty) Ltd'"></jjva-ngx-whatsapp-button>
             <div id="page-bottom" style="height: 210px;">&nbsp;</div>
         </div>

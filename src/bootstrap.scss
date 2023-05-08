@@ -120,3 +120,29 @@
 .navbar-toggler-icon {
   filter: brightness(1) invert(1);
 }
+
+.rjl-tooltip-custom .tooltip-inner {
+  opacity: 1;
+  font-size: 14px;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  background-color: #009ffb;
+  border-radius: 0;
+}
+
+.rjl-tooltip-custom.bs-tooltip-end .tooltip-arrow::before {
+  border-right-color: #009ffb;
+}
+
+.rjl-tooltip-custom.bs-tooltip-start .tooltip-arrow::before {
+  border-left-color: #009ffb;
+}
+
+.rjl-tooltip-custom.bs-tooltip-top .tooltip-arrow::before {
+  border-top-color: #009ffb;
+}
+
+.rjl-tooltip-custom.bs-tooltip-bottom .tooltip-arrow::before {
+  border-bottom-color: #009ffb;
+}

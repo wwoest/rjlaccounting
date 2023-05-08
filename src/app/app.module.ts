@@ -8,7 +8,7 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { ServicesComponent } from './services/services.component';
 import { ResourcesComponent } from './resources/resources.component';
 import { FaqComponent } from './faq/faq.component';
-import { NgbCarouselConfig, NgbCarouselModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbCarouselConfig, NgbCarouselModule, NgbTooltipModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FooterComponent } from './footer/footer.component';
 import { TermsComponent } from './terms/terms.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
@@ -58,6 +58,7 @@ import { CookieService } from 'ngx-cookie-service';
     QRCodeModule,
     FormsModule,
     NgbCarouselModule,
+    NgbTooltipModule,
     ReactiveFormsModule,
     HttpClientModule  
   ],
