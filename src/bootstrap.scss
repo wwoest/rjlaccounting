@@ -36,6 +36,12 @@
 }
 
 @media screen and (min-width:1200px) {
+  .navbar {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+  }
+
   #navbarSupportedContent>button {
     margin-left: 3px;
     border-radius: 0px !important;

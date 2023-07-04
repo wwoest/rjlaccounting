@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./ecard.component.scss']
 })
 export class EcardComponent {
-  public myAngularxQrCode = "http://www.rjlaccounting.co.za/e-card.pdf";
+  public myAngularxQrCode = "http://www.rjlaccounting.co.za";
 }

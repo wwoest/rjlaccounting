@@ -14,6 +14,18 @@
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#004887', endColorstr='#009ffb', GradientType=1);
 }
 
+@media screen and (max-width:1199px) {
+    .cookie-container {
+        margin: -2px -10px 0 -10px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .cookie-container {
+        margin: 58px -15px -75px -15px;
+    }
+}
+
 .cookie-container a {
     color: #ffffff;
     font-weight: bold;

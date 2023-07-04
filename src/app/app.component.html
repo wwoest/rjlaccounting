@@ -22,9 +22,9 @@
     </div>
 </nav>
 <div class="container-fluid">
+    <app-cookie></app-cookie>
     <div class="row">
-        <div class="col g-0">
-            <app-cookie></app-cookie>
+        <div class="col g-0 content-adjust">
             <router-outlet></router-outlet>
             <jjva-ngx-whatsapp-button id="rjlWhatsapp" [ngx_whatsapp_phone]="'+27828254362'" class="rjl-whatsapp"
                 [ngx_whatsapp_text]="'RJL Accounting (Pty) Ltd'"></jjva-ngx-whatsapp-button>

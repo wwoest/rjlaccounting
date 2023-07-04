@@ -56,25 +56,25 @@
     .footer>button {
         @media screen and (max-width:650px) {
             font-size: 14px;
-            margin: 20px 10px 20px 0;
+            margin: 20px 0 20px 0;
             padding: 8px !important;
-            width: 75%;
+            width: calc(100% - 50px);
             border-radius: 0px !important;
         }
 
         @media screen and (min-width:651px) and (max-width:1199px) {
             font-size: 14px;
-            margin: 20px 10px 20px 0;
+            margin: 20px 0 20px 0;
             padding: 5px !important;
-            width: 75%;
+            width: calc(100% - 50px);
             border-radius: 0px !important;
         }
 
         @media screen and (min-width:1200px) {
             font-size: 16px;
-            margin: 20px 10px 20px 0;
+            margin: 20px 0 20px 0;
             padding: 8px !important;
-            width: 200px;
+            width: calc(100% - 50px);
             border-radius: 0px !important;
         }
     }
